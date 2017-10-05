@@ -5,21 +5,25 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="jrl.deint.loginlinearlayout.LoginActivity">
+    tools:context="jrl.deint.loginlinearlayout.LoginActivity"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/lnl_login_padding">
 
     <TextView
         android:id="@+id/txvSignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Sign In" />
+        android:text="@string/txvSignIn"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"/>
 
     <TextView
         android:id="@+id/txvUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="User:" />
+        android:text="@string/txvUser"
+        android:textAppearance="@android:style/TextAppearance.Small"/>
 
     <EditText
         android:id="@+id/edtUser"
@@ -27,65 +31,78 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:ems="10"
-        android:inputType="textPassword" />
+        android:inputType="textPersonName"
+        android:layout_marginBottom="@dimen/txvSignIn_margin"/>
 
     <TextView
         android:id="@+id/txvPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Password:" />
+        android:text="@string/txvPassword"
+        android:textAppearance="@android:style/TextAppearance.Small"/>
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edtPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPassword"
+        android:layout_marginBottom="@dimen/txvSignIn_margin"/>
 
     <LinearLayout
         android:id="@+id/lnlSignOptions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/lnl_sign_options">
 
         <CheckBox
-            android:id="@+id/chkRemember"
+            android:id="@+id/ckbRemember"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Remember" />
+            android:text="@string/ckbRemember"
+            android:textAppearance="@android:style/TextAppearance.Small"/>
 
         <TextView
             android:id="@+id/txvSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Sign Up" />
+            android:text="@string/txvSignUp"
+            android:textAppearance="@android:style/TextAppearance.Small"/>
 
     </LinearLayout>
 
     <Button
         android:id="@+id/btnSignIn"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Sign In" />
+        android:text="@string/btnSignIn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/btnSignIn"
+        android:background="@color/colorPrimaryDark"/>
 
     <Button
         android:id="@+id/btnGoogleSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Google" />
+        android:text="@string/btnGoogleSignIn"
+        android:drawableLeft="@drawable/ic_google"
+        android:background="@color/colorGoogle"/>
 
     <Button
         android:id="@+id/btnFacebookSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Facebook" />
+        android:text="@string/btnFacebookSignIn"
+        android:drawableLeft="@drawable/ic_facebook"
+        android:background="@color/colorFacebook"/>
 
 </LinearLayout>
