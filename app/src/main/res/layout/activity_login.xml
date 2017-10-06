@@ -32,7 +32,8 @@
         android:layout_weight="1"
         android:ems="10"
         android:inputType="textPersonName"
-        android:layout_marginBottom="@dimen/txvSignIn_margin"/>
+        android:layout_marginBottom="@dimen/txvSignIn_margin"
+        android:background="@drawable/shape_edittext"/>
 
     <TextView
         android:id="@+id/txvPassword"
@@ -61,17 +62,17 @@
 
         <CheckBox
             android:id="@+id/ckbRemember"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.8"
             android:text="@string/ckbRemember"
             android:textAppearance="@android:style/TextAppearance.Small"/>
 
         <TextView
             android:id="@+id/txvSignUp"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.2"
             android:text="@string/txvSignUp"
             android:textAppearance="@android:style/TextAppearance.Small"/>
 
@@ -94,7 +95,9 @@
         android:layout_weight="1"
         android:text="@string/btnGoogleSignIn"
         android:drawableLeft="@drawable/ic_google"
-        android:background="@color/colorGoogle"/>
+        android:background="@color/colorGoogle"
+        android:layout_marginBottom="@dimen/btnGoogleSign"
+        style="@style/Widget.Button.Transparent"/>
 
     <Button
         android:id="@+id/btnFacebookSignIn"
@@ -103,6 +106,7 @@
         android:layout_weight="1"
         android:text="@string/btnFacebookSignIn"
         android:drawableLeft="@drawable/ic_facebook"
-        android:background="@color/colorFacebook"/>
+        android:background="@color/colorFacebook"
+        style="@style/Widget.Button.Transparent"/>
 
 </LinearLayout>
